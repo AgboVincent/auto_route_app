@@ -10,7 +10,7 @@ class UsersPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: GestureDetector(
-          onTap: () =>context.router.push(UserProfileRoute(userId: 2)) ,
+          onTap: () => context.router.push(UserProfileRoute(userId: 2)) ,
           child: const Text(
             "navigating"
           ),
