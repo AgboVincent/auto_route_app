@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class RiverPod extends StatelessWidget {
-  RiverPod({Key? key}) : super(key: key);
+   RiverPod({Key? key}) : super(key: key);
 
-  final incrementProvider = ChangeNotifierProvider((ref)=>IncrementNotifier());
+   final incrementProvider = ChangeNotifierProvider((ref)=>IncrementNotifier());
     final responseProvider = FutureProvider.autoDispose.family<String, String>((ref, url) async {
     final httpClient =  ref.read(fakeHttpClientProvider);
     return httpClient.get(url);
   });
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

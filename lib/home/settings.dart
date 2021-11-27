@@ -10,7 +10,7 @@ class SettingsPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: GestureDetector(
-          onTap: () => context.pushRoute( const RiverPod()),
+          onTap: () => context.pushRoute( RiverPod()),
           child: const Text(
             "settings",
             style: TextStyle(color: Colors.blue),

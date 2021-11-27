@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:auto_route_app/home/home_page.dart';
+import 'package:auto_route_app/pages/box_dec.dart';
 import 'package:auto_route_app/posts/posts.dart';
 import 'package:auto_route_app/home/settings.dart';
 import 'package:auto_route_app/posts/single_post.dart';
@@ -47,6 +48,9 @@ import 'package:auto_route_app/user/users_page.dart';
   ]),
   AutoRoute(
     page: RiverPod
+  ),
+  AutoRoute(
+    page:BoxPage
   )
 ])
 class $AppRouter {}

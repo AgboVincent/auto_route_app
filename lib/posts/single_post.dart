@@ -12,17 +12,13 @@ class SinglePostPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Container(
         color: Colors.red,
-        child:  Column(
-          children: const [
-              Center(
-                child: Text(
-                  "Welcome",
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
-                ),
-              )
-        ],
+        child:const  Center(
+          child: Text(
+            "Welcome",
+            style: TextStyle(
+              color: Colors.white
+            ),
+          ),
         ),
     );
   }
