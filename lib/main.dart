@@ -17,7 +17,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Bottom Nav Bar with Nested Routing",
       routeInformationParser: _appRouter.defaultRouteParser(),
-      routerDelegate: _appRouter.delegate(),
+      routerDelegate: _appRouter.delegate(
+        initialRoutes: [
+          const LoginScreen()
+        ]
+      ),
     );
   }
 }

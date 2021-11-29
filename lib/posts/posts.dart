@@ -15,16 +15,11 @@ class PostsPage extends StatefulWidget {
 class _PostsPageState extends State<PostsPage> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     final loginData = UserLoginData(
       username: "username",
        password: "password",
-       profileDetails: ProfileDetails(
-         name: "name", 
-         age: 1, 
-         color: "color"
-         ));
+       );
 
        final json = loginData.toJson();
        print("$json");

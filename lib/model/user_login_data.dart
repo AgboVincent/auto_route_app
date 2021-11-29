@@ -8,12 +8,12 @@ part 'user_login_data.g.dart';
 class UserLoginData {
   final String username;
   final String password;
-  final ProfileDetails profileDetails;
+  
 
   UserLoginData({
     required this.username,
     required this.password,
-    required this.profileDetails,
+  
   });
   
   factory UserLoginData.fromJson(Map<String, dynamic> json) => _$UserLoginDataFromJson(json);
@@ -24,5 +24,5 @@ class UserLoginData {
 
   @override
   String toString()=>
-  'Details{username: $username, password: $password, profileDetails: $profileDetails}';
+  'Details{username: $username, password: $password,}';
 }
