@@ -13,7 +13,8 @@ class SettingsPage extends StatelessWidget {
          Padding(
            padding: EdgeInsets.only(right:20.0),
            child: Icon(Icons.settings, color: AppColor.white, size: 20,),
-         )
+         ),
+         Text("settings",style: TextStyle(color: AppColor.accent),)
       ],),
       body: Center(
         child: GestureDetector(
