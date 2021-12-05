@@ -54,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: AppColor.white
                 ),),
                 textColor: AppColor.accent,
-                title: "Logiiin",
+                title: "Login",
                 onPressed:  () {
                   final login = UserLoginData(
                     username: usernameController.text,
